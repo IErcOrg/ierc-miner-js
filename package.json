@@ -1,0 +1,29 @@
+{
+  "name": "ierc-miner-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cli": "ts-node src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bignumber.js": "^9.1.2",
+    "commander": "^11.0.0",
+    "dayjs": "^1.11.10",
+    "ethers": "5",
+    "log4js": "^6.9.1",
+    "node-json-db": "^2.2.0",
+    "spinnies": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.5",
+    "@types/spinnies": "^0.5.1",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
