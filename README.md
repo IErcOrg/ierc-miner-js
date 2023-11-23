@@ -41,7 +41,7 @@ yarn install
 1. Create wallet Or Set wallet
 
 ```shell
-yarn cli wallet -create
+yarn cli wallet --create
 Or
 yarn cli wallet -set <privateKey>
 ```
