@@ -65,7 +65,7 @@ This mining user configuration was not found!
 
   while (true) {
     mineCount += 1;
-    const callData = `data:application/json,{"p":"ierc-20","op":"mint","tick":"${tick}","amt":${amt},"nonce":"${generateNonce()}${unique++}"}`;
+    const callData = `data:application/json,{"p":"ierc-20","op":"mint","tick":"${tick}","amt":"${amt}","nonce":"${generateNonce()}${unique++}"}`;
     // console.log("🚀 ~ transactionData:", callData)
     const transaction = {
       type: 2,
