@@ -1,4 +1,4 @@
-# Ethereum IERC PoW Miner Program
+# Ethereum IERC POW Miner Program
 
 This Ethereum IERC PoW Miner Program is a Node.js command-line application that enables users to interact with Ethereum wallets and perform PoW mining.
 
