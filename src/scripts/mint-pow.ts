@@ -13,7 +13,7 @@ import { generateNonce } from "../utils";
 interface IMineOptions {
   account: string;
 }
-const tick = "BTCI-POW8";
+const tick = "ethpi";
 let unique = 0;
 export const runMintPow = async (workc: string, options: IMineOptions) => {
   sayMinerLog();
