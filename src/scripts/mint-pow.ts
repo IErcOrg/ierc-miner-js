@@ -60,7 +60,7 @@ This mining user configuration was not found!
   let timer = Date.now(),
     startTimer = timer,
     mineCount = 0;
-  toMintBlockNumber = blockNumber;
+  toMintBlockNumber = blockNumber + 3;
   setInterval(() => {
     toMintBlockNumber += 1;
   }, 1000 * 12);
@@ -118,7 +118,7 @@ This mining user configuration was not found!
       const currentBlockNumber = await provider.getBlockNumber();
       if (Math.abs(currentBlockNumber - toMintBlockNumber) > 5) {
         spinnies.fail("mining", {
-          text: `The block height is too high, please try again later`,
+          text: `The current block height is ${currentBlockNumber}, the expected block height is ${toMintBlockNumber}, the difference is too large, and the mining is stopped.`,
           color: "red",
         });
         return;
