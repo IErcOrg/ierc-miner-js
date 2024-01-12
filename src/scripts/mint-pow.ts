@@ -60,12 +60,12 @@ This mining user configuration was not found!
   let timer = Date.now(),
     startTimer = timer,
     mineCount = 0;
+  toMintBlockNumber = blockNumber;
   setInterval(() => {
     toMintBlockNumber += 1;
   }, 1000 * 12);
   while (true) {
     mineCount += 1;
-    toMintBlockNumber = blockNumber + 5;
     const transaction = {
       type: 2,
       chainId: network.chainId,
@@ -82,7 +82,7 @@ This mining user configuration was not found!
           tick: tick,
           // use_point: '0',
           block: String(toMintBlockNumber),
-          nonce: `${generateNonce()}${unique++}`,
+          nonce: `${generateNonce()}`,
         })}`
       ),
     };
