@@ -54,21 +54,21 @@ Note: Newly created wallets require a transfer of funds
 yarn cli mine <tick> --account <address>
 ```
 
+3. DPoS&PoW mine
 
+```shell
+yarn cli mint-pow <workc> --account <address>
+```
 
 ### Wallet Commands
 
-- View Wallet Info: yarn cli wallet --target <address>
-- View information of a specific wallet address.
-- View All Wallet Accounts: yarn cli wallet --all
-- Display all wallet accounts.
-- Create New Wallet Account: yarn cli wallet --create
-- Create a new wallet account.
-- Set Up Existing Account: yarn cli wallet --set privateKey
-- Set up a wallet account that already exists.
+- View Wallet Info: `yarn cli wallet --target <address>`
+- View All Wallet Accounts: `yarn cli wallet --all`
+- Create New Wallet Account: `yarn cli wallet --create`
+- Set Up Existing Account: `yarn cli wallet --set privateKey`
 
 ### Mining Commands
 
-Start Mining: yarn cli mine <tick> --account <address>
+- Start Mining: `yarn cli mine <tick> --account <address>`
 
-- Start mining by specifying the number of ticks and the mining address.
+- Start DPoS&PoW Mining: `yarn cli mint-pow <workc> --account <address>`
