@@ -15,6 +15,7 @@ interface IMineOptions {
 }
 const tick = "ethpi";
 let unique = 0;
+let toMintBlockNumber = 0;
 export const runMintPow = async (workc: string, options: IMineOptions) => {
   sayMinerLog();
   if (!(workc.length >= 6 && workc.length <= 22 && ethers.utils.isHexString(workc))) {
@@ -59,10 +60,12 @@ This mining user configuration was not found!
   let timer = Date.now(),
     startTimer = timer,
     mineCount = 0;
-
+  setInterval(() => {
+    toMintBlockNumber += 1;
+  }, 1000 * 12);
   while (true) {
     mineCount += 1;
-    const toMintBlockNumber = blockNumber + 5;
+    toMintBlockNumber = blockNumber + 5;
     const transaction = {
       type: 2,
       chainId: network.chainId,
